@@ -11,7 +11,7 @@ namespace coreJSON
             Pedido pedidoImportado;
             try 
             {
-                pedidoImportado = importPedido("gravando.json");
+                pedidoImportado = importPedido("../gravando.json");
             } catch(FileNotFoundException ex){
                 pedidoImportado = new Pedido(){
                     nome = "Usuario Teste",
@@ -21,7 +21,7 @@ namespace coreJSON
                     telefone = "1234 5678"
                 };
             }
-			exportPedido(pedidoImportado, "gravando.json");
+			exportPedido(pedidoImportado, "../gravando.json");
         }
 
         private static Pedido importPedido(string arquivo)
