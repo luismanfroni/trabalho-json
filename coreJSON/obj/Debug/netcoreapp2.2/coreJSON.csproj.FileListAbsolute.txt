@@ -1,0 +1,11 @@
+/home/siul/Development/Projects/coreJSON/bin/Debug/netcoreapp2.2/coreJSON.deps.json
+/home/siul/Development/Projects/coreJSON/bin/Debug/netcoreapp2.2/coreJSON.runtimeconfig.json
+/home/siul/Development/Projects/coreJSON/bin/Debug/netcoreapp2.2/coreJSON.runtimeconfig.dev.json
+/home/siul/Development/Projects/coreJSON/bin/Debug/netcoreapp2.2/coreJSON.dll
+/home/siul/Development/Projects/coreJSON/bin/Debug/netcoreapp2.2/coreJSON.pdb
+/home/siul/Development/Projects/coreJSON/obj/Debug/netcoreapp2.2/coreJSON.csprojAssemblyReference.cache
+/home/siul/Development/Projects/coreJSON/obj/Debug/netcoreapp2.2/coreJSON.csproj.CoreCompileInputs.cache
+/home/siul/Development/Projects/coreJSON/obj/Debug/netcoreapp2.2/coreJSON.AssemblyInfoInputs.cache
+/home/siul/Development/Projects/coreJSON/obj/Debug/netcoreapp2.2/coreJSON.AssemblyInfo.cs
+/home/siul/Development/Projects/coreJSON/obj/Debug/netcoreapp2.2/coreJSON.dll
+/home/siul/Development/Projects/coreJSON/obj/Debug/netcoreapp2.2/coreJSON.pdb
