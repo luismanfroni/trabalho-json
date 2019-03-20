@@ -1,39 +1,37 @@
 ﻿using System;
-using Newtonsoft.Json;
+
 using System.IO;
+using System.Collections.Generic;
 
 namespace coreJSON
 {
     class Program
     {
+        const string arquivo = "../gravando.json";
         static void Main(string[] args)
         {
-            Pedido pedidoImportado;
-            try 
-            {
-                pedidoImportado = importPedido("../gravando.json");
-            } catch(FileNotFoundException ex){
-                pedidoImportado = new Pedido(){
-                    nome = "Usuario Teste",
-                    endereco = "Joinville",
-                    pedido = "Pizza Grande",
-                    restaurante = "Baggio",
-                    telefone = "1234 5678"
-                };
+            PedidoManager pm = new PedidoManager(arquivo);
+            if(args != null && args.Length > 0){
+                foreach(string arg in args){
+                    string param = arg.Trim().ToUpper();
+                    switch(param){
+                        case "V":
+                        case "VERBOSE":
+                            pm.verbose = true;
+                            break;
+                        case "D":
+                        case "DEBUG":
+                            pm.debug = true;
+                            break;
+                    }
+                    
+                }
+                
             }
-			exportPedido(pedidoImportado, "../gravando.json");
+            Console.WriteLine("Checando por atualizações nos pedidos em " + arquivo);
+            while(true) { }
         }
 
-        private static Pedido importPedido(string arquivo)
-        {
-        	string json = File.ReadAllText(arquivo);
-        	return JsonConvert.DeserializeObject<Pedido>(json);
-        }
-
-        private static void exportPedido(Pedido pedido, string arquivo)
-        {
-        	string json = JsonConvert.SerializeObject(pedido);
-        	File.WriteAllText(arquivo, json);
-        }
+        
     }
 }
